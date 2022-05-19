@@ -1,0 +1,17 @@
+<app-shop-form (onItemAddEvent)="addItem($event)"></app-shop-form>
+<h2>Einkaufsliste</h2>
+<div class="div_Sort">
+  <app-shop-sort (onSortEvent)="sortList($event)"></app-shop-sort>
+</div>
+<br />
+
+<div
+  class="shoppinglist"
+  *ngFor="let item of shoppingItems | filterview: filter"
+>
+  <app-shop-item
+    [shoppingListItem]="item"
+    (onItemDeleteEvent)="removeItem($event)"
+    (onItemUpdateEvent)="updateItem($event)"
+  ></app-shop-item>
+</div>

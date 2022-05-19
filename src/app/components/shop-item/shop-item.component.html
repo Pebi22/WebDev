@@ -1,0 +1,18 @@
+<div
+  class="card"
+  (click)="toggleCompleted()"
+  [style.background-color]="shoppingListItem.done ? 'lightgrey' : '#73a24e'"
+>
+  <div class="card-body">
+    <button class="delete" (click)="btnDelete()">🗑</button>
+    <h4 class="card-title">
+      {{ shoppingListItem.title }}
+    </h4>
+
+    <p class="card-text">
+      {{ shoppingListItem.amount }} {{ shoppingListItem.unit }}
+      <br />
+      <span>{{ shoppingListItem.description }}</span>
+    </p>
+  </div>
+</div>

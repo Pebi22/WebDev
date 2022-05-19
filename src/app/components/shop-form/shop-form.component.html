@@ -1,0 +1,104 @@
+<div>
+  <p>
+    <button
+      class="btn btn-primary btnNew"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Neuen Einkauf hinzufügen
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="form-group">
+      <form>
+        <h3>Neues Item {{ model.title }}</h3>
+        <div class="form-floating mb-3 mt-3">
+          <input
+            id="inputTitle"
+            name="inputTitle"
+            type="text"
+            class="form-control"
+            ngModel
+            [(ngModel)]="model.title"
+            placeholder="Name des Artikels"
+          />
+          <label for="inputTitle">Titel </label>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+          <textarea
+            id="inputBody"
+            name="inputBody"
+            class="form-control"
+            type="text"
+            [(ngModel)]="model.description"
+            placeholder="Name des Artikels"
+          ></textarea>
+          <label class="form-label" for="inputBody">Beschreibung </label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            id="inputAmount"
+            name="inputAmount"
+            class="form-control"
+            type="number"
+            placeholder="1"
+            [(ngModel)]="model.amount"
+          />
+          <label class="form-label" for="inputAmount">Anzahl </label>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+          <input
+            id="inputUnit"
+            name="inputUnit"
+            class="form-control"
+            type="text"
+            placeholder="Stück"
+            [(ngModel)]="model.unit"
+          />
+          <label class="form-label" for="inputUnit">Einheit </label>
+        </div>
+        <form>
+          <div class="btn-group">
+            <input
+              class="form-check-input"
+              name="inputCompleted"
+              id="inputCompletedDone"
+              type="radio"
+              value="true"
+              [(ngModel)]="model.done"
+            />
+            <label for="inputCompletedDone" class="form-check-label"
+              >Completed</label
+            >
+          </div>
+          <div>
+            <input
+              class="form-check-input"
+              name="inputCompleted"
+              id="inputCompletedOpen"
+              type="radio"
+              value="false"
+              [(ngModel)]="model.done"
+              checked
+            />
+            <label for="inputCompletedOpen" class="form-check-label active">
+              Open</label
+            >
+          </div>
+        </form>
+
+        <br />
+        <button type="submit" class="btn btn-primary btnNew" (click)="onAdd()">
+          Save
+        </button>
+      </form>
+      <br />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+{
+  "shoppinglistitems": [
+    {
+      "id": 1,
+      "title": "Mehl",
+      "description": "Mehl glatt",
+      "amount": 500,
+      "unit": "gramm",
+      "done": true
+    },
+    {
+      "id": 2,
+      "title": "Milch",
+      "amount": 0.5,
+      "unit": "liter",
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Eier",
+      "amount": 8,
+      "done": false
+    },
+    {
+      "id": 4,
+      "title": "Mineralwasser",
+      "amount": 2,
+      "unit": "liter",
+      "done": true
+    },
+    {
+      "id": 5,
+      "title": "Cola",
+      "amount": 1.5,
+      "unit": "liter",
+      "done": false
+    },
+    {
+      "id": 6,
+      "title": "Kartoffeln",
+      "amount": 2,
+      "unit": "Kilogramm",
+      "done": false
+    },
+    {
+      "id": 7,
+      "title": "Eis",
+      "amount": "1",
+      "done": false,
+      "description": "Ben & Jerrys Caramel Wahnsinn",
+      "unit": "Stück"
+    },
+    {
+      "id": 8,
+      "title": "Putzmittel",
+      "amount": 1,
+      "done": false,
+      "description": "Meister Propper Extra"
+    },
+    {
+      "id": 9,
+      "title": "Küchenrolle",
+      "amount": 1,
+      "done": false,
+      "description": "Extra saugfest"
+    },
+    {
+      "id": 10,
+      "title": "Cookie Crisps",
+      "amount": "2",
+      "done": true,
+      "description": "schoko"
+    },
+    {
+      "id": 11,
+      "title": "Whisky",
+      "amount": 1,
+      "done": "false",
+      "description": "Scotch Ballentines",
+      "unit": "Flasche"
+    }
+  ]
+}
